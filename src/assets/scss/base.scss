@@ -1,0 +1,89 @@
+@import 'bootstrap/bootstrap-grid.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&subset=cyrillic');
+
+$color-main: #333;
+
+$color-light-main: #f2f2f2;
+$color-light-primary: rgba(50, 139, 195, 0.21);
+$bs: -2px 2px 8px rgba(212, 212, 212, 0.54);
+
+@mixin title($level) {
+  @include media-breakpoint-down(md) {
+    font-size: 28px * $level;
+    text-align: center;
+  }
+  font-size: 36px * $level;
+  font-weight: 300;
+  line-height: 42px;
+  color: $color-main;
+}
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+  margin: 0;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  color: #1e8bc3;
+  &:hover {
+    color: #186790;
+  }
+  &:visited {
+    color: #1e8bc3;
+  }
+}
+
+p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  @include title(1);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  @include title(0.8);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  @include title(0.6);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type='text']::-webkit-input-placeholder {
+  color: #242429;
+}
+input[type='text']::-moz-placeholder {
+  color: #242429;
+}
+input[type='text']::placeholder {
+  color: #242429;
+}
