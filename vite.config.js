@@ -8,6 +8,14 @@ import svgLoader from 'vite-svg-loader'
 export default defineConfig({
   test: /\.svg$/,
   plugins: [vue(), svgLoader()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/assets/scss/variables.scss";`
+      }
+    }
+  },
+ 
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

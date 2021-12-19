@@ -1,0 +1,31 @@
+@import 'bootstrap/bootstrap-grid.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&subset=cyrillic');
+$color-main: #333;
+$color-primary: #1e8bc3;
+$color-accent: #ff5061;
+$color-light-main: #f2f2f2;
+$color-light-primary: rgba(50, 139, 195, 0.21);
+$bs: -2px 2px 8px rgba(212, 212, 212, 0.54);
+$color-main: #333;
+
+@mixin title($level) {
+  @include media-breakpoint-down(md) {
+    font-size: 28px * $level;
+    text-align: center;
+  }
+  font-size: 36px * $level;
+  font-weight: 300;
+  line-height: 42px;
+  color: $color-main;
+}
+@mixin welcome-form-input() {
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #1e8bc3;
+  background-color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  padding: 15px 8px;
+  height: 55px;
+}

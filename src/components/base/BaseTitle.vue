@@ -8,7 +8,6 @@ import '@/composables/components/useTitle'
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/bootstrap/bootstrap-grid.scss';
 .title {
   display: inline-block;
   margin: 0 auto;
@@ -32,6 +31,25 @@ import '@/composables/components/useTitle'
     font-size: 1.5rem;
     line-height: 2.2rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  &--medium {
+    margin: 2rem 0;
+    @include title(1);
+  }
+  &--small {
+    @include title(0.8);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  &--container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+  &--mt {
+    margin-top: 2rem;
+  }
+  &--mb {
     margin-bottom: 2rem;
   }
 }

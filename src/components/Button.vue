@@ -8,18 +8,12 @@ import '@/composables/components/useButtonProps'
 </template>
 <script>
 import '@/composables/components/useButtonProps.js'
-import {ref} from 'vue'
 export default {
-  setup(props) {
-    console.log('props', props)
-  },
+  setup(props) {},
 }
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/bootstrap/bootstrap-grid.scss';
-$color-primary: #1e8bc3;
-$color-accent: #ff5061;
 .button,
 a.button {
   display: inline-block;

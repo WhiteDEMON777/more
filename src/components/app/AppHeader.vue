@@ -26,7 +26,6 @@ import Logo from '@/assets/image/icon/logo1.svg'
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/bootstrap/bootstrap-grid.scss';
 .topbar {
   box-shadow: -1px 0 2px #ccc;
   &__container {

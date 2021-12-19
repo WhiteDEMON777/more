@@ -1,11 +1,7 @@
-<script setup>
-const inputValue = ref('')
-
-const changeValue = (value) => {
-  inputValue.value = value
-}
-</script>
+<script setup></script>
 
 <template>
-  <input :value="inputValue" @input="changeValue" />
+  <input :value="inputValue" class="form__guest" placeholder="1 гость" />
 </template>
+
+<style lang="scss" scoped></style>
